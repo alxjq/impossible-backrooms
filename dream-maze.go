@@ -22,8 +22,8 @@ var gameMap [][]int // 0 empty, 1 wall, 2 exit
 
 var levelMessages = map[int]string{
 	1: "Brain condition is still critical...",
-	2: "Risk of brain death is gone.",
-	3: "Brain condition is getting worse...",
+	2: "Brain condition is getting worse...",
+	3: "Risk of brain death is gone.",
 	4: "...",
 }
 
@@ -329,7 +329,7 @@ func main() {
 
 	game := &Game{player: Player{1.5, 1.5, 0, 0.1}, level: 1}
 	ebiten.SetWindowSize(640, 400)
-	ebiten.SetWindowTitle("IMPOSSIBLE BACKROOMS")
+	ebiten.SetWindowTitle("Dream-Maze")
 	if err := ebiten.RunGame(game); err != nil {
 		log.Fatal(err)
 	}
